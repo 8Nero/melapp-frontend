@@ -17,6 +17,7 @@ header {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     width: -webkit-fill-available;
     position: fixed;
+    z-index: 99;
 }
 
 header h1 {
@@ -24,9 +25,16 @@ header h1 {
     font-weight: 200;
 }
 
+footer p {
+    text-align: right;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    position: relative;
+}
+
 #main {
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +50,8 @@ header h1 {
     max-width: 600px;
     border-radius: 10px;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
 }
 
 #app>div {
@@ -62,6 +72,7 @@ div.prediction {
     text-align: center;
     border: 3px solid violet;
     margin: 20px auto;
+    width: -moz-fit-content;
     width: fit-content;
     min-width: 200px;
     border-radius: 3px;
