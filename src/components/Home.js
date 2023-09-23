@@ -22,7 +22,7 @@ function Home() {
             formData.append("file", event.target.elements.file.files[0]);
 
             // send POST request to API server with file data
-            const res = await axios.post("https://neural-engine-3db1ce90b484.herokuapp.com/predict", formData, {
+            const res = await axios.post("https://melapp-backend-de0d85f8bc91.herokuapp.com/predict", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
